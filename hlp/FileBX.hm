@@ -1,0 +1,120 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_HELP_UPLINKS                        0x10003
+HIDM_ABOUTBOX                           0x10010
+HID_EDIT_FV                             0x103F6
+HID_OPENWIN                             0x18004
+HID_EXIT                                0x18005
+HID_OPEN                                0x18008
+ 
+// Prompts (IDP_*) 
+HIDP_OLE_INIT_FAILED                    0x38009
+ 
+// Resources (IDR_*) 
+HIDR_HTML_HEADERDLG                     0x2006B
+HIDR_MAINFRAME                          0x20080
+HIDR_TRAY_MENU                          0x20083
+HIDR_DISABLED                           0x207D0
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_FAVORITES                          0x20066
+HIDD_NEW_ITEM                           0x20090
+HIDD_FILEBX                             0x20091
+HIDD_SETTINGS                           0x20092
+HIDD_UPDATE_LINKS                       0x20094
+HIDD_KEY_SETTINGS                       0x20099
+HIDD_EXCEPTIONS                         0x2009B
+HIDD_OPTIONS                            0x2009C
+HIDD_HEADER                             0x200A0
+HIDD_ABOUTBOX1                          0x200A1
+ 
+// Controls (IDW_*) 
+// Microsoft Visual C++ generated Help ID include file.
+// Used by FileBX.rc
+//
+#define HIDCANCEL                       0x80900002    // IDD_NEW_ITEM
+#define HIDC_ABOUT                      0x809103f4    // IDD_FILEBX
+#define HIDC_ADDNUM_RECENT              0x80990431    // IDD_KEY_SETTINGS
+#define HIDC_ADD_EXCEPT                 0x809b04b9    // IDD_EXCEPTIONS
+#define HIDC_ADD_SEPARATOR              0x806603fa    // IDD_FAVORITES
+#define HIDC_BACK_LIC                   0x80930423    // IDD_LICENSE
+#define HIDC_BROWSE_FILE                0x80900408    // IDD_NEW_ITEM
+#define HIDC_BROWSE_FOLDER              0x80900407    // IDD_NEW_ITEM
+#define HIDC_CHANGE_FOLDER              0x806603f2    // IDD_FAVORITES
+#define HIDC_CHECK_VER                  0x80930425    // IDD_LICENSE
+#define HIDC_CLICKSWITCH1               0x809c04d3    // IDD_OPTIONS
+#define HIDC_CLICKSWITCH2               0x809c04d4    // IDD_OPTIONS
+#define HIDC_CLICKSWITCH3               0x809c04d5    // IDD_OPTIONS
+#define HIDC_CLOSE                      0x809103f3    // IDD_FILEBX
+#define HIDC_DELETE                     0x806603fb    // IDD_FAVORITES
+#define HIDC_DELETE_ALL                 0x80660400    // IDD_FAVORITES
+#define HIDC_DEL_EXCEPT                 0x809b04ba    // IDD_EXCEPTIONS
+#define HIDC_DEL_LIC                    0x80930422    // IDD_LICENSE
+#define HIDC_DETAILED                   0x809c0428    // IDD_OPTIONS
+#define HIDC_DETAILED_ASIZ              0x809c04cd    // IDD_OPTIONS
+#define HIDC_DISP_FAVEX                 0x809204c4    // IDD_SETTINGS
+#define HIDC_DISP_FAVFB                 0x809204c3    // IDD_SETTINGS
+#define HIDC_DISP_PUSHPIN               0x809204ca    // IDD_SETTINGS
+#define HIDC_DISP_RECEX                 0x809204c6    // IDD_SETTINGS
+#define HIDC_DISP_RECFB                 0x809204c5    // IDD_SETTINGS
+#define HIDC_DISP_ROLLUP                0x809204cb    // IDD_SETTINGS
+#define HIDC_EDIT_ITEM                  0x806603fd    // IDD_FAVORITES
+#define HIDC_EXC_LIST                   0x809b04bc    // IDD_EXCEPTIONS
+#define HIDC_EXIT                       0x80910402    // IDD_FILEBX
+#define HIDC_EX_DONTHANDLE              0x809b04cb    // IDD_EXCEPTIONS
+#define HIDC_EX_FOLDERBTNS              0x809b04c7    // IDD_EXCEPTIONS
+#define HIDC_EX_HRESIZE                 0x809b04c8    // IDD_EXCEPTIONS
+#define HIDC_EX_NOPIN                   0x809b04cc    // IDD_EXCEPTIONS
+#define HIDC_EX_NOROLL                  0x809b04cd    // IDD_EXCEPTIONS
+#define HIDC_EX_VRESIZE                 0x809b04c9    // IDD_EXCEPTIONS
+#define HIDC_FOLDERS_EXPL               0x80920412    // IDD_SETTINGS
+#define HIDC_HELP_FBX                   0x8091040e    // IDD_FILEBX
+#define HIDC_HELP_ITPROP                0x8090040f    // IDD_NEW_ITEM
+#define HIDC_HOTKEY_FAV                 0x8099042c    // IDD_KEY_SETTINGS
+#define HIDC_HOTKEY_REC                 0x8099042d    // IDD_KEY_SETTINGS
+#define HIDC_ITEM_DESC                  0x80900405    // IDD_NEW_ITEM
+#define HIDC_ITEM_INFO                  0x806603fe    // IDD_FAVORITES
+#define HIDC_ITEM_TARGET                0x80900406    // IDD_NEW_ITEM
+#define HIDC_LIC_NCOPIES                0x8093041b    // IDD_LICENSE
+#define HIDC_LIC_OWNER                  0x80930418    // IDD_LICENSE
+#define HIDC_LIC_SERIAL_NO              0x80930419    // IDD_LICENSE
+#define HIDC_MAX_RECENT                 0x80990401    // IDD_KEY_SETTINGS
+#define HIDC_MOVE_LEFT                  0x809b044e    // IDD_EXCEPTIONS
+#define HIDC_MOVE_LEFTMAX               0x80920453    // IDD_SETTINGS
+#define HIDC_NEW_SHORTCUT               0x806603f7    // IDD_FAVORITES
+#define HIDC_NEW_SUBMENU                0x806603f9    // IDD_FAVORITES
+#define HIDC_ROLLED_TOPMOST                0x809204cc    // IDD_SETTINGS
+#define HIDC_ORDER_LIC                  0x80930424    // IDD_LICENSE
+#define HIDC_RADIO1                     0x809c041e    // IDD_UPDATE_LINKS
+#define HIDC_RADIO2                     0x809c041f    // IDD_UPDATE_LINKS
+#define HIDC_RADIO3                     0x80940420    // IDD_UPDATE_LINKS
+#define HIDC_RECENT_FROMWIN             0x80990456    // IDD_KEY_SETTINGS
+#define HIDC_RECENT_PATH                0x80990452    // IDD_KEY_SETTINGS
+#define HIDC_RECENT_SORT                0x80990453    // IDD_KEY_SETTINGS
+#define HIDC_RENAME                     0x806603fc    // IDD_FAVORITES
+#define HIDC_RESIZE                     0x809c0429    // IDD_OPTIONS
+#define HIDC_RESIZE2                    0x809c042a    // IDD_OPTIONS
+#define HIDC_RESIZE3                    0x809c042b    // IDD_OPTIONS
+#define HIDC_RESIZE_HEIGHT              0x809c0451    // IDD_OPTIONS
+#define HIDC_RESIZE_WIDTH               0x809c044f    // IDD_OPTIONS
+#define HIDC_SORT_COL1                  0x809c04ce    // IDD_OPTIONS
+#define HIDC_SORT_COL2                  0x809c0421    // IDD_OPTIONS
+#define HIDC_SORT_COL3                  0x809c0422    // IDD_OPTIONS
+#define HIDC_SORT_COL4                  0x809c0423    // IDD_OPTIONS
+#define HIDC_SORT_FRAME                 0x809c04d0    // IDD_OPTIONS
+#define HIDC_SORT_ORD1                  0x809c04d1    // IDD_OPTIONS
+#define HIDC_SORT_ORD2                  0x809c04d2    // IDD_OPTIONS
+#define HIDC_STATIC_PIXELS              0x809b0454    // IDD_EXCEPTIONS
+#define HIDC_STATIC_PIXELS2             0x809b0455    // IDD_EXCEPTIONS
+#define HIDC_STATIC_PIXELS3             0x80920456    // IDD_SETTINGS
+#define HIDC_STATIC_PIXELS4             0x80920457    // IDD_SETTINGS
+#define HIDC_STATIC_RECENT              0x8099040c    // IDD_KEY_SETTINGS
+#define HIDC_STATIC_RECENT2             0x8099040d    // IDD_KEY_SETTINGS
+#define HIDC_SYSMNU_ROLLUP              0x80990455    // IDD_KEY_SETTINGS
+#define HIDC_SYSMNU_TOPMOST             0x80990454    // IDD_KEY_SETTINGS
+#define HIDC_TEST                       0x806603f1    // IDD_FAVORITES
+#define HIDC_TRAY_ICON                  0x80920410    // IDD_SETTINGS
+#define HIDC_TREE1                      0x806603ec    // IDD_FAVORITES
+#define HIDC_UPDATE_LINKS               0x80660450    // IDD_FAVORITES
+#define HIDOK                           0x80900001    // IDD_NEW_ITEM

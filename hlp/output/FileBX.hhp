@@ -1,0 +1,54 @@
+;Created with MGTEK Help Producer - www.helpproducer.com
+[OPTIONS]
+Compatibility=1.1 or later
+Binary TOC=Yes
+Compiled File=FileBX.chm
+Contents File=FileBX.hhc
+Default Font=Microsoft Sans Serif,10,0
+Default Window=Default
+Default Topic=html\welcome.html
+Enhanced Decompilation=Yes
+Full text search stop list file=default.stp
+Full-text Search=Yes
+Index File=FileBXindex.hhk
+Language=1033
+Title=FileBox eXtender Help
+
+[WINDOWS]
+Default="FileBox eXtender Help","FileBX.hhc","FileBXindex.hhk","html\welcome.html","html\welcome.html",,,,,0x61520,,0x70300e,[0,0,799,799],,,,,,,0
+Popup="FileBox eXtender Help","FileBX.hhc","FileBXindex.hhk","html\welcome.html","html\welcome.html",,,,,0x60402,,0x10200e,[0,0,599,599],,,,,,,0
+
+[FILES]
+html\welcome.html
+html\features.html
+html\configuration.html
+html\favorites_tab.html
+html\item_props.html
+html\settings_tab.html
+html\fileboxes_tab.html
+html\keys_menu_tab.html
+html\exceptions_tab.html
+html\change_buttons.html
+html\registration.html
+html\faq.html
+html\contact.html
+html\other_products.html
+images\image12.jpg
+images\image6.jpg
+images\image13.jpg
+images\image7.jpg
+images\image14.jpg
+images\image9.jpg
+images\image2.jpg
+images\image8.gif
+images\image3.jpg
+images\image10.jpg
+images\image1.gif
+images\image15.gif
+images\image4.jpg
+images\image16.gif
+images\image11.jpg
+images\image5.jpg
+default.css
+theme.css
+theme.js

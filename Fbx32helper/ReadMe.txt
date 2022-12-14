@@ -1,0 +1,1 @@
+32 bit helper for 64-bit version of FbX.

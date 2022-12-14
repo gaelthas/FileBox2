@@ -1,0 +1,10 @@
+LIBRARY FileBXH
+
+EXPORTS
+	CallWndRetProc
+	InstallMsgHooks
+	ReleaseMsgHooks
+	GetShData
+	GetMsgProc
+	DFH_AddMenuItem
+	DebugProc

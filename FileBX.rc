@@ -1,0 +1,496 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <dlgs.h>
+#include <WINRESRC.H> 
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DRAG_ITEM           CURSOR                  "res\\drag_ite.cur"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_FBX_HAND            CURSOR                  "res\\H_arrow.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <dlgs.h>\r\n"
+    "#include <WINRESRC.H> \r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DFolder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ico00002.ico"
+IDI_MAINFRAME_HICOLOR   ICON                    "res\\file box heart 02.ico"
+IDR_DISABLED            ICON                    "res\\idr_main.ico"
+IDI_TEXT                ICON                    "res\\text.ico"
+IDI_FAVORITES           ICON                    "res\\favorite.ico"
+IDI_RECENT              ICON                    "res\\recent.ico"
+IDI_FOLDER              ICON                    "res\\folder.ico"
+IDI_FILE                ICON                    "res\\file.ico"
+IDI_SEPARATOR           ICON                    "res\\separat.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FAVORITES DIALOGEX 4, 68, 296, 175
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Favorites"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,148,4,146,120,0,HIDC_TREE1
+    PUSHBUTTON      "&New Item...",IDC_NEW_SHORTCUT,3,5,65,13,WS_GROUP,0,HIDC_NEW_SHORTCUT
+    PUSHBUTTON      "New Sub-&Menu",IDC_NEW_SUBMENU,3,20,65,13,0,0,HIDC_NEW_SUBMENU
+    PUSHBUTTON      "Add &Separator",IDC_ADD_SEPARATOR,3,35,65,13,0,0,HIDC_ADD_SEPARATOR
+    PUSHBUTTON      "&Update Shortcuts...",IDC_UPDATE_LINKS,3,50,65,13,0,0,HIDC_UPDATE_LINKS
+    PUSHBUTTON      "&Test Menu",IDC_TEST,3,65,65,13,0,0,HIDC_TEST
+    PUSHBUTTON      "&Edit Item...",IDC_EDIT_ITEM,78,5,65,13,0,0,HIDC_EDIT_ITEM
+    PUSHBUTTON      "&Rename",IDC_RENAME,78,20,65,13,0,0,HIDC_RENAME
+    PUSHBUTTON      "&Delete Item",IDC_DELETE,78,35,65,13,0,0,HIDC_DELETE
+    PUSHBUTTON      "Delete &All...",IDC_DELETE_ALL,78,50,65,13,0,0,HIDC_DELETE_ALL
+    LTEXT           "Currently selected item:",IDC_STATIC,2,82,110,8
+    EDITTEXT        IDC_ITEM_INFO,2,93,142,80,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_GROUP,0,HIDC_ITEM_INFO
+    EDITTEXT        IDC_DBG_MSG,147,124,147,48,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_GROUP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Switch Config",IDC_CHANGE_FOLDER,78,65,65,13,0,0,HIDC_CHANGE_FOLDER
+END
+
+IDD_FILEBX DIALOGEX 0, 0, 428, 228
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "FileBox eXtender"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",WS_TABSTOP,124,3,301,191
+    PUSHBUTTON      "<<",IDC_TOGGLE_INFO,123,196,16,14
+    PUSHBUTTON      "E&xit",IDC_EXIT,141,196,50,14,0,0,HIDC_EXIT
+    PUSHBUTTON      "&Help",IDC_HELP_FBX,271,196,50,14,WS_GROUP,0,HIDC_HELP_FBX
+    PUSHBUTTON      "About FbX",IDC_ABOUT,323,196,50,14,WS_GROUP,0,HIDC_ABOUT
+    PUSHBUTTON      "H&ide",IDC_CLOSE,375,196,50,14,0,0,HIDC_CLOSE
+    CONTROL         "Press Help button for usage tips.",IDC_HELP_TEXT,"Static",SS_SIMPLE | SS_CENTERIMAGE | WS_GROUP,123,214,304,8
+    PUSHBUTTON      "",ID_EDIT_FV,409,3,16,13,NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_SETTINGS DIALOGEX 4, 68, 286, 149
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP | WS_EX_APPWINDOW
+CAPTION "Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "FileBX Buttons to Display",IDC_STATIC,7,3,271,102
+    CONTROL         "Push-pin button to keep windows on top",IDC_DISP_PUSHPIN,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,13,255,9,0,HIDC_DISP_PUSHPIN
+    CONTROL         "Roll-up button to display only the title-bar of a window, hide the rest",IDC_DISP_ROLLUP,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,23,258,9,0,HIDC_DISP_ROLLUP
+    CONTROL         "When rolled up, keep the window bar on top",IDC_ROLLED_TOPMOST,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,28,33,246,9,0,HIDC_ROLLED_TOPMOST
+    LTEXT           "Favorites button on:",IDC_STATIC,18,49,108,8
+    CONTROL         "file boxes",IDC_DISP_FAVFB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,48,61,8,0,HIDC_DISP_FAVFB
+    CONTROL         "Explorer folders",IDC_DISP_FAVEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,48,84,8,0,HIDC_DISP_FAVEX
+    LTEXT           "Recent folders button on:",IDC_STATIC,18,58,107,8
+    CONTROL         "file boxes",IDC_DISP_RECFB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,58,62,8,0,HIDC_DISP_RECFB
+    CONTROL         "Explorer folders",IDC_DISP_RECEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,58,84,8,0,HIDC_DISP_RECEX
+    LTEXT           "Move FbX buttons to the left by ",IDC_STATIC_PIXELS,18,71,108,9,0,0,HIDC_STATIC_PIXELS
+    EDITTEXT        IDC_MOVE_LEFT,128,70,16,12,ES_AUTOHSCROLL | WS_GROUP,0,HIDC_MOVE_LEFT
+    LTEXT           "pixels",IDC_STATIC_PIXELS2,147,71,128,9,0,0,HIDC_STATIC_PIXELS2
+    LTEXT           "Move FbX buttons to the left by ",IDC_STATIC_PIXELS3,18,84,108,9,0,0,HIDC_STATIC_PIXELS3
+    EDITTEXT        IDC_MOVE_LEFTMAX,127,83,16,12,ES_AUTOHSCROLL | WS_GROUP,0,HIDC_MOVE_LEFTMAX
+    LTEXT           "more pixels, if a window is maximized.",IDC_STATIC_PIXELS4,146,84,130,16,0,0,HIDC_STATIC_PIXELS4
+    CONTROL         "Display FbX icon in the system tray",IDC_TRAY_ICON,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,7,113,271,9,0,HIDC_TRAY_ICON
+    CONTROL         "Re-use the same Explorer window when switching folders with FbX buttons",IDC_FOLDERS_EXPL,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_GROUP | WS_TABSTOP,7,125,271,22,0,HIDC_FOLDERS_EXPL
+END
+
+IDD_UPDATE_LINKS DIALOGEX 0, 0, 232, 112
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Update Shortcuts"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Leave broken shortcuts unchanged",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,48,193,10,0,HIDC_RADIO1
+    CONTROL         "Convert broken shortcuts to text items",IDC_RADIO2,
+                    "Button",BS_AUTORADIOBUTTON,18,60,193,10,0,HIDC_RADIO2
+    CONTROL         "Delete broken shortcuts",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,18,72,193,10,0,HIDC_RADIO3
+    DEFPUSHBUTTON   "OK",IDOK,71,95,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,124,95,50,14
+    PUSHBUTTON      "Help",ID_HELP_UPLINKS,177,95,50,14
+    LTEXT           "This function will try to update the shortcuts for documents and folders that were moved or renamed.",IDC_STATIC,4,2,224,18
+    LTEXT           "Warning: this operation may take a long time, if some of your shortcuts point to network servers that are currently off-line.",IDC_STATIC,4,23,224,19
+END
+
+IDD_KEY_SETTINGS DIALOGEX 4, 68, 284, 151
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION " Keys && Menus"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "To select hot key combinations that will open FbX menus, click into the white fields below and press the key combination you want. Press Backspace to delete the key completely (if you don't need it).",IDC_STATIC,12,4,265,24
+    RTEXT           "Open favorites menu:",IDC_STATIC,7,33,116,8
+    CONTROL         "HotKey1",IDC_HOTKEY_FAV,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,127,30,117,12,0,HIDC_HOTKEY_FAV
+    RTEXT           "Open recent menu:",IDC_STATIC,7,46,116,8
+    CONTROL         "HotKey1",IDC_HOTKEY_REC,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,127,43,117,12,0,HIDC_HOTKEY_REC
+    CONTROL         "Add underscored numbers to Recent menu items for easy access",IDC_ADDNUM_RECENT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,61,265,8,0,HIDC_ADDNUM_RECENT
+    CONTROL         "Display full path on the ""Recent"" menu",IDC_RECENT_PATH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,71,265,8,0,HIDC_RECENT_PATH
+    CONTROL         "Sort ""Recent"" menu alphabetically",IDC_RECENT_SORT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,81,265,8,0,HIDC_RECENT_SORT
+    CONTROL         "Add ""Always on top"" command to a window system menu",IDC_SYSMNU_TOPMOST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,91,265,8,0,HIDC_SYSMNU_TOPMOST
+    CONTROL         "Add ""Roll up"" command to a window system menu",IDC_SYSMNU_ROLLUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,101,265,8,0,HIDC_SYSMNU_ROLLUP
+    LTEXT           "Display",IDC_STATIC_RECENT,12,113,26,9,0,0,HIDC_STATIC_RECENT
+    EDITTEXT        IDC_MAX_RECENT,40,111,16,12,ES_AUTOHSCROLL | WS_GROUP,0,HIDC_MAX_RECENT
+    LTEXT           "items on Recent Folders menu",IDC_STATIC_RECENT2,59,113,218,9,0,0,HIDC_STATIC_RECENT2
+    CONTROL         "Add folders from Windows ""My Recent Documents"" to FbX Recent menu\n(may be slower on some machines )",IDC_RECENT_FROMWIN,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,12,126,265,17,0,HIDC_RECENT_FROMWIN
+END
+
+IDD_EXCEPTIONS DIALOGEX 4, 68, 286, 167
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Exceptions"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "A few programs will not work correctly with FileBX, or will work only if FileBX does not try to resize their file boxes. You may add such programs to the list below, and define if and how we should handle them.",IDC_STATIC,2,4,281,23
+    PUSHBUTTON      "Add Program to Exceptions...",IDC_ADD_EXCEPT,2,31,140,13,0,0,HIDC_ADD_EXCEPT
+    PUSHBUTTON      "Delete Program from Exceptions",IDC_DEL_EXCEPT,143,31,140,13,0,0,HIDC_DEL_EXCEPT
+    LTEXT           "Exception List:",IDC_STATIC,2,45,140,10
+    LISTBOX         IDC_EXC_LIST,2,55,281,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,0,HIDC_EXC_LIST
+    CONTROL         "Do not handle this program at all",IDC_EX_DONTHANDLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,119,138,10,0,HIDC_EX_DONTHANDLE
+    CONTROL         "No pushpin button",IDC_EX_NOPIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,129,138,10,0,HIDC_EX_NOPIN
+    CONTROL         "No Favorites or Recent buttons",IDC_EX_FOLDERBTNS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,119,138,10,0,HIDC_EX_FOLDERBTNS
+    CONTROL         "Allow horizontal resize of file boxes",IDC_EX_HRESIZE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,129,138,10,0,HIDC_EX_HRESIZE
+    CONTROL         "Allow vertical resize of file boxes",IDC_EX_VRESIZE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,139,138,10,0,HIDC_EX_VRESIZE
+    CONTROL         "No roll-up button",IDC_EX_NOROLL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,139,138,10,0,HIDC_EX_NOROLL
+    LTEXT           "Move FbX buttons to the left by ",IDC_STATIC_PIXELS,4,153,108,9,0,0,HIDC_STATIC_PIXELS
+    EDITTEXT        IDC_MOVE_LEFT,114,152,18,12,ES_AUTOHSCROLL | WS_GROUP,0,HIDC_MOVE_LEFT
+    LTEXT           "pixels",IDC_STATIC_PIXELS2,134,153,128,9,0,0,HIDC_STATIC_PIXELS2
+END
+
+IDD_OPTIONS DIALOGEX 4, 68, 286, 149
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP | WS_EX_APPWINDOW
+CAPTION "File Boxes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Auto-switch std. file boxes to ""Details"" view of the file list...",IDC_DETAILED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,3,268,8,0,HIDC_DETAILED
+    CONTROL         "... and auto-size columns",IDC_DETAILED_ASIZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,13,261,8,0,HIDC_DETAILED_ASIZ
+    GROUPBOX        "Sort columns by",IDC_SORT_FRAME,19,22,254,48,0,0,HIDC_SORT_FRAME
+    CONTROL         "Name",IDC_SORT_COL1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,29,31,138,9,0,HIDC_SORT_COL1
+    CONTROL         "Size",IDC_SORT_COL2,"Button",BS_AUTORADIOBUTTON,29,40,138,9,0,HIDC_SORT_COL2
+    CONTROL         "Type",IDC_SORT_COL3,"Button",BS_AUTORADIOBUTTON,29,49,138,9,0,HIDC_SORT_COL3
+    CONTROL         "Date",IDC_SORT_COL4,"Button",BS_AUTORADIOBUTTON,29,58,138,9,0,HIDC_SORT_COL4
+    CONTROL         "Ascending",IDC_SORT_ORD1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,170,31,100,9,0,HIDC_SORT_ORD1
+    CONTROL         "Descending",IDC_SORT_ORD2,"Button",BS_AUTORADIOBUTTON,170,40,100,9,0,HIDC_SORT_ORD2
+    CONTROL         "Resize std. file boxes to",IDC_RESIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,75,269,9,0,HIDC_RESIZE
+    EDITTEXT        IDC_RESIZE_WIDTH,19,85,21,12,ES_AUTOHSCROLL | WS_GROUP,0,HIDC_RESIZE_WIDTH
+    LTEXT           "% width and ",IDC_RESIZE2,44,87,39,9,0,0,HIDC_RESIZE2
+    EDITTEXT        IDC_RESIZE_HEIGHT,112,85,21,12,ES_AUTOHSCROLL | WS_GROUP,0,HIDC_RESIZE_HEIGHT
+    LTEXT           "% height of the original size.",IDC_RESIZE3,135,87,146,17,0,0,HIDC_RESIZE3
+    GROUPBOX        "Click-switch file box folder feature",IDC_STATIC,8,101,271,44
+    CONTROL         "Disabled",IDC_CLICKSWITCH1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,110,254,10,0,HIDC_CLICKSWITCH1
+    CONTROL         "Enable for clicks on opened Explorer folders only",IDC_CLICKSWITCH2,
+                    "Button",BS_AUTORADIOBUTTON,15,120,254,10,0,HIDC_CLICKSWITCH2
+    CONTROL         "Enable for clicks on any window (switches to current folder of that window)",IDC_CLICKSWITCH3,
+                    "Button",BS_AUTORADIOBUTTON,15,130,254,10,0,HIDC_CLICKSWITCH3
+END
+
+IDD_NEW_ITEM DIALOGEX 0, 0, 279, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Item Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "To create a ""Favorites"" menu item which is a shortcut to a folder or file/document, click on one of the ""Browse"" buttons. You may also type the target path manually, or type a text like *.zip, *.doc etc. to list files of certain type in a file box.",IDC_STATIC,7,33,265,26
+    LTEXT           "NOTE: you may also create new items by dragging folder or file icons from the desktop or other Explorer folders on FileBX menu editor!",IDC_STATIC,7,7,265,18
+    RTEXT           "Target text or shortcut:",IDC_STATIC,7,66,100,9
+    EDITTEXT        IDC_ITEM_TARGET,111,64,161,12,ES_AUTOHSCROLL,0,HIDC_ITEM_TARGET
+    PUSHBUTTON      "Browse for a &Folder",IDC_BROWSE_FOLDER,111,78,79,12,0,0,HIDC_BROWSE_FOLDER
+    PUSHBUTTON      "Browse for a F&ile",IDC_BROWSE_FILE,194,78,79,12,0,0,HIDC_BROWSE_FILE
+    RTEXT           "This item is:",IDC_STATIC,34,92,73,9
+    LTEXT           "",IDC_ITEM_TYPE,112,92,160,9
+    LTEXT           "Enter item description below. This is the text that will appear on ""Favorites"" menu.",IDC_STATIC,7,110,265,10
+    RTEXT           "Item description:",IDC_STATIC,7,124,100,9
+    EDITTEXT        IDC_ITEM_DESC,111,122,161,12,ES_AUTOHSCROLL,0,HIDC_ITEM_DESC
+    DEFPUSHBUTTON   "OK",IDOK,118,140,50,14,0,0,HIDOK
+    PUSHBUTTON      "Cancel",IDCANCEL,170,140,50,14,0,0,HIDCANCEL
+    PUSHBUTTON      "&Help",IDC_HELP_ITPROP,222,140,50,14,0,0,HIDC_HELP_ITPROP
+END
+
+IDD_HEADER DIALOGEX 0, 0, 119, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 257, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FileBox eXtender"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "FileBox eXtender Version %d.%02d.%02d    (%d bit%s)",IDC_VERSION,40,3,217,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999-2011 Hyperionics Technology LLC",IDC_STATIC,40,16,215,8
+    DEFPUSHBUTTON   "OK",IDOK,195,117,54,14,WS_GROUP
+    LTEXT           "Email:",IDC_STATIC,7,71,18,9
+    LTEXT           "info@hyperionics.com",IDC_EMAIL,28,71,74,9,NOT WS_VISIBLE
+    LTEXT           "Web:",IDC_STATIC,134,71,20,9
+    LTEXT           "http://www.hyperionics.com",IDC_HTTP,157,71,93,9,NOT WS_VISIBLE
+    LTEXT           "Your FbX configuration folder is:",IDC_STATIC,7,80,158,8
+    EDITTEXT        IDC_CFG_FOLDER,7,91,241,25,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "This is free software distributed under the GNU General Public License. You are welcome to redistribute it under the conditions of this license. Click here for more information.",IDC_GNU_LICENSE,40,33,215,24
+    PUSHBUTTON      "Contributors",IDC_CONTRIBUTORS,5,117,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAY_MENU MENU 
+BEGIN
+    POPUP "Dummy"
+    BEGIN
+        MENUITEM "&Open",                       ID_OPEN
+        MENUITEM "Exit",                        ID_EXIT
+    END
+    MENUITEM SEPARATOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_HEADERDLG      HTML                    "HeaderDlg.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HYPER_LOGO          BITMAP                  "res\\Hyper.bmp"
+IDB_MP_LOGO             BITMAP                  "res\\MPlogo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 131
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_DEL_LIC2            "You should delete your license only if you want to leave FileBX unlicensed on this machine, possibly so that someone else could try it as well. Click OK to confirm license deletion."
+    IDS_DELLIC_ERR          "Error: could not delete the license file, access denied."
+    IDS_GETFBX_MNU1         "Get these buttons on the..."
+    IDS_GETFBX_MNU2         "...file boxes of all programs!"
+    IDS_INFO                "Information"
+    IDS_ADD                 "Add"
+    IDS_REMOVE              "Remove"
+    IDS_RECENT_FOLDERS      "Recent Folders"
+    IDS_FOLDER_SELECT2      "Create or select a new folder for FbX settings. Must be empty or previously used by FbX."
+    IDS_CFG_FOLDER_EMPTY    "This is an empty directory. Would you like to copy all settings and links from the current configuration folder here?"
+    IDS_CFG_FOLDER_NOT_EMPTY 
+                            "The folder you selected is not empty and it is not a previous FbX configuration folder. It can not be used to store FbX settings."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FOLDER_SELECT       "Select your new favorite folder."
+    IDS_VIRUS               "FileBox eXtender program files are corrupt or out of sync, possibly due to an upgrade and not rebooting the system. Please shutdown and restart your computer. If that won't help, re-download and reinstall FbX."
+    IDS_ERR_SAVELIC         "FileBox eXtender could not save the license to its installation folder. Possible reasons: the folder is read-only or the disk is full. Please correct the problem and retry, or copy the file KEY.HP_FBX_LIC manually to FbX folder."
+    IDS_LICENSE_OK          "Your license was verified and saved correctly. Thank you for using FileBox eXtender!"
+    IDS_LIC_BAD             "The license that you are trying to enter is incorrect or damaged. Please contact your software dealer for a new license file."
+    IDS_INVALID_FOLDER      " - is not a valid folder name. Please correct."
+    IDS_COPY_FAILED         "The license file could not be copied to the target folder. The disk or folder may be read-only, write protected or full. Please correct the problem and try again."
+    IDS_CONF_NOBACKUP       "Without a backup copy of your license file, you may loose your license permanently in case of disk crash or similer disaster.\n\nDo you really want to abort the backup?"
+    IDS_BK_FOLDER_SEL       "Select the disk and folder where you want to backup your FileBX license."
+    IDS_BACKUP_OK           "Backup finished. If you used a floppy disk as recommended, please remove the disk from your disk drive and store in a safe place. Thank you!"
+    IDS_UNLICENSED          "UNLICENSED"
+    IDS_READLIC_TITLE       "Select a File with FileBX License"
+    IDS_LIC_FILTER          "FileBX License Files"
+    IDS_ALL_FILES           "All Files"
+    IDS_LIC_INCORRECT       "Sorry, the license text you entered is not correct."
+    IDS_DEL_LIC             "Warning: This will permanently delete your license from this machine. Do you really want to do this?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FileBX..."
+    IDS_UNREG_MNU1          "Unlicensed - only 2 items shown"
+    IDS_UNREG_MNU2          "Click here to get a license!"
+    IDS_NOT_REGISTERED      "This copy of FileBox eXtender is not registered. It will display this message upon startup and allow you to have only 2 ""favorite"" items on FbX shortcut menu.\r\n\r\n"
+    IDS_REG_FEATURES        "To register this copy of FbX, select the ""Buy a license"" button below. After you register, you will receive a license key to remove these restrictions.\r\n\r\n"
+    IDS_PROD_INFO           "Other Hyperionics products:\r\n\tHyperCam - record action from your screen into AVI movies\r\n\tHyperSnap-DX - screen capture and image editing utility"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IS_TEXT             " - enters the following text or file filter:"
+    IDS_IS_SEPARATOR        " - is a menu separator."
+    IDS_NEW_SUBMENU         "New Sub-Menu"
+    IDS_SHORTCUT_FOLD       "a shortcut to a folder."
+    IDS_SHORTCUT_FILE       "a shortcut to a file or document."
+    IDS_TEXT_ITEM           "a text item."
+    IDS_DELETE_ALL          "Do you really want to delete all items from the ""Favorites"" menu?\nHint: you may later restore them from the ""Recycle Bin"""
+    IDS_DELETE_HINT         "Hint: You can restore deleted items from Windows ""Recycle Bin"""
+    IDS_PRESS_HELP          "Press Help button for usage tips."
+    IDS_TYPE_NEW_NAME       "Hint: Type the new item name now."
+    IDS_MOVE_ITEM           "Hint: You can rearrange items and separators by dragging them with the mouse."
+    IDS_CREATE_DROP         "Hint: You can also create new items by dragging in icons from Explorer folders."
+    IDS_BETA_EXPIRED        "This test version of FileBox eXtende  has now expired. Please check our WEB page at\n\n http://www.hyperionics.com\n\n for a newer beta test or a fully released version."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPENWIN              "Open"
+    ID_EXIT                 "Exit Default Folder program\nExit"
+    IDS_ERR_MOVE            "An item with identical name already exists in the target branch of the menu. Please rename one of the items first to have unique names, then try the move again."
+    IDS_ERR_RENAME          "Illegal or duplicate file name. Please enter a unique name, and don't use the following characters: * ? \\ / "" : "
+    IDS_STRING32776         "OLE 2.0  initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_OLE_INIT_FAILED     "OLE 2.0 initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_MAINTAIN_FAV        "Configure..."
+    IDS_FOLDER_SHORTCUT     "  - is a shortcut to the following FOLDER:"
+    IDS_BROKEN_SHORTCUT     "*** Broken shortcut!"
+    IDS_EXIT_PROMPT         "Do you want to EXIT completely FileBox eXtender?"
+    IDS_FILE_SHORTCUT       "  - is a shortcut to the following FILE:"
+    IDS_IS_SUBMENU          " - is a sub-menu."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROG_FILES          "Program Files"
+    IDS_DLL_FILES           "DLL Files"
+    IDS_ON_TOP              "Always on top"
+    IDS_ROLL_UP             "Roll up"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DFolder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

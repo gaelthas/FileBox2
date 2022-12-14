@@ -1,0 +1,545 @@
+/*
+// msdn.css
+// Copyright (C) 2001-2004 MGTEK. All rights reserved.
+*/
+
+/* --------------------------------------------------
+                  MAIN TOPIC STYLES
+-------------------------------------------------- */
+
+BODY
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: #ffffff;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	width: 100%;
+}
+
+DIV#nsbanner
+{
+	position: relative;
+	left: 0px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid #999999;
+}
+
+DIV#nstext
+{
+	padding: 5px 10px 0px 22px;
+}
+
+DIV#bannerrow1
+{
+	background-color: #99ccff;
+}
+
+DIV#titlerow
+{
+	width: 100%;
+	padding: 0px 10px 0px 22px;
+	background-color: #99ccff;
+}
+
+DIV.saveHistory
+{
+	behavior: url(#default#savehistory);
+	text-decoration: underline;
+}
+
+/* --------------------------------------------------
+                    HEADING STYLES
+-------------------------------------------------- */
+
+H1, H2, H3, H4
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: .4em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+H1
+{
+	font-size: 120%;
+	margin-top: 0em;
+}
+
+H2
+{
+	font-size: 130%;
+}
+
+H3
+{
+	font-size: 115%;
+}
+
+H4
+{
+	font-size: 100%;
+}
+
+.dtH1, .dtH2, .dtH3, .dtH4
+{
+	margin-left: -18px;
+}
+
+DIV#titlerow H1
+{
+	margin-bottom: .2em;
+}
+
+/* --------------------------------------------------
+                     TEXT STYLES
+-------------------------------------------------- */
+
+P
+{
+	margin: .5em 0em .5em 0em;
+}
+
+BLOCKQUOTE.dtBlock
+{
+	margin: .5em 1.5em .5em 1.5em;
+}
+
+DIV#dtHoverText
+{
+	color: #000066;
+}
+
+.normal
+{
+	margin: .5em 0em .5em 0em;
+}
+
+.fineprint
+{
+	font-size: 90%;
+}
+
+.indent
+{
+	margin: .5em 1.5em .5em 1.5em;
+}
+
+.topicstatus
+{
+	display: block;
+	color: red;
+}
+
+/* --------------------------------------------------
+                     LABEL STYLES
+-------------------------------------------------- */
+
+P.label
+{
+	margin-top: 1em;
+}
+
+P.labelproc
+{
+	margin-top: 1em;
+	color: #000066;
+}
+
+/* --------------------------------------------------
+                    GRAPHIC STYLES
+-------------------------------------------------- */
+
+IMG
+{
+	border: none;
+}
+
+/* --------------------------------------------------
+                     LIST STYLES
+-------------------------------------------------- */
+
+OL, UL
+{
+	margin: .5em 0em 0em 2em;
+}
+
+LI
+{
+	margin-bottom: .5em;
+}
+
+UL P, OL P, DL P
+{
+	margin-left: 0em;
+}
+
+UL P.label, OL P.label
+{
+	margin-top: .5em;
+}
+
+/* --------------------------------------------------
+               DEFINITION LIST STYLES
+-------------------------------------------------- */
+
+DL
+{
+	margin-top: 0em;
+	padding-left: 1px;
+}
+
+DD
+{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+}
+
+DT
+{
+	margin-top: .5em;
+}
+
+/* --------------------------------------------------
+           CODE, SYNTAX, and REFTIP STYLES
+-------------------------------------------------- */
+
+PRE
+{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+PRE, CODE, .code
+{
+	font: 100% Monospace, Courier New, Courier;
+	color: #000066;
+}
+
+PRE B, CODE B
+{
+	letter-spacing: .1em;
+}
+
+PRE.syntax
+{
+	background: #cccccc;
+	padding: 4px 8px;
+	cursor: text;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+/* --------------------------------------------------
+                      LINK STYLES
+-------------------------------------------------- */
+
+A:link
+{
+	color: #0000ff;
+}
+
+A:visited
+{
+	color: #0000ff;
+}
+
+A:hover
+{
+	color: #3366ff;
+}
+
+/* --------------------------------------------------
+                    TABLE STYLES
+-------------------------------------------------- */
+
+DIV.tablediv
+{
+	width: 100%;
+	margin-top: -.4em;
+}
+
+OL DIV.tablediv, UL DIV.tablediv, OL DIV.HxLinkTable, UL DIV.HxLinkTable
+{
+	margin-top: 0em;
+}
+
+table.dtTABLE
+{
+	width: 100%;
+	margin-top: .6em;
+	margin-bottom: .3em;
+	border-width: 1px 1px 0px 0px;
+	border-style: solid;
+	border-color: #999999;
+	background-color: #999999;
+	font-size: 100%;
+}
+
+TABLE.dtTABLE TH, TABLE.dtTABLE TD
+{
+	border-style: solid;
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+	border-color: #999999;
+	padding: 4px 6px;
+	text-align: left;
+}
+
+TABLE.dtTABLE TH
+{
+	background: #cccccc;
+	vertical-align: bottom;
+}
+
+TABLE.dtTABLE TD
+{
+	background: #ffffff;
+	vertical-align: top;
+}
+
+/* --------------------------------------------------
+                  ISSUE REPORTING
+-------------------------------------------------- */
+
+DIV.footer
+{
+	font-style: italic;
+}
+
+DIV.footer HR
+{
+	color: #999999;
+	height: 1px;
+}
+
+/* --------------------------------------------------
+             STYLES FOR RUNNING HEADS
+-------------------------------------------------- */
+
+TABLE.bannerparthead, TABLE.bannertitle
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	height: 21px;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0px;
+	background-color: #99ccff;
+	font-size: 100%;
+}
+
+TABLE.bannerparthead TD
+{
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	border-width: 0px;
+	border-style: solid;
+	border-color: #999999;
+	background: transparent;
+	font-style: italic;
+	font-weight: normal;
+}
+
+TABLE.bannerparthead TD.product
+{
+	text-align: right;
+	padding: 2px 5px 0px 5px;
+}
+
+TABLE.bannertitle TD
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 3px;
+	vertical-align: middle;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #999999;
+	background: transparent;
+	font-weight: bold;
+}
+
+TD.button
+{
+	width: 14px;
+	cursor: hand;
+}
+
+/* --------------------------------------------------
+              GLOSSARY POPUP STYLES
+-------------------------------------------------- */
+
+#glossarypopuplink
+{
+	cursor: hand;
+	color: green;
+	text-decoration: underline;
+}
+
+DIV.glossarypopup
+{
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	width: 50%;
+	padding: 5px 10px;
+	border: 1px solid #999999;
+	background: #ffffcc;
+}
+
+/* --------------------------------------------------
+          RUNNING HEAD BAR POPUP STYLES
+-------------------------------------------------- */
+
+DIV.popup, DIV.language
+{
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	z-index: 1;
+	width: 50%;
+	padding: 0px 8px 5px 26px;
+	border: 1px solid #999999;
+	background: #ffffcc;
+}
+
+DIV.language
+{
+	padding: 10px 10px 10px 10px;
+}
+
+DIV.language UL
+{
+	list-style-type: none;
+	padding-left: 5px;
+	margin-left: 0px;
+}
+
+.lang, .ilang
+{
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+H1 .lang, H1 .ilang
+{
+	font-size: 65%;
+}
+
+DIV.filtered
+{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	margin-left: -7px;
+	padding: 0px 0px 0px 6px;
+	border-left: 1px solid #999999;
+	background: #ffffff;
+}
+
+DIV.filtered H1, DIV.filtered H2, DIV.filtered H3, DIV.filtered H4
+{
+	margin-left: -22px;
+}
+
+DIV.filtered SPAN.lang
+{
+	position: relative;
+	left: 0px;
+}
+
+/* --------------------------------------------------
+              PARAMETER POPUP STYLES
+-------------------------------------------------- */
+
+DIV.reftip
+{
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	border: 1px solid #999999;
+	background: #ffffcc;
+}
+
+DIV.reftip DL
+{
+	margin: 3px 8px 8px 8px;
+}
+
+A.synParam
+{
+	color: #0000ff;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+A.synParam:visited
+{
+	color: #0000ff;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+A.synParam:hover
+{
+	color: #3366ff;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+/* --------------------------------------------------
+              EXPAND-COLLAPSE STYLES
+-------------------------------------------------- */
+
+DIV.expandbody
+{
+	margin: .5em 0em 0em 1.4em;
+	display: none;
+}
+
+A.expandlink
+{
+	font-size: 100%;
+}
+
+A#expand, A#expandall
+{
+	color: #3366ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* --------------------------------------------------
+                    HEADER STYLES
+-------------------------------------------------- */
+
+TABLE.header
+{
+	width: 100%;
+	background-color: #e8e8e8;
+	border-bottom: solid 1 #c0c0c0;
+}
+
+TABLE.header TD
+{
+	padding: 2pt 4pt;
+}
+
+TABLE.header P
+{
+	margin: 0;
+	font-size: 70%;
+	font-weight: bold;
+}

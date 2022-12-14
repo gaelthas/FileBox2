@@ -1,0 +1,37 @@
+<%@ LANGUAGE="JScript" CODEPAGE="1252" %>
+<HTML>
+	<HEAD>
+		<TITLE><%= ActiveTopic.Title %></TITLE>
+	</HEAD>
+	<BODY>
+		<% if (ActiveTopic.ClassName == "HpHtmlPopup") { %>
+		<DIV id="popup">
+			<% Response.WriteBody(); %>
+		</DIV>
+		<% } else { %>
+		<DIV id="header">
+			<DIV id="headerRow">
+				<P><%= Project.Collection.Title %></P>
+			</DIV>
+			<DIV id="titleRow">
+				<P><%= ActiveTopic.RlTitle %></P>
+			</DIV>
+		</DIV>
+		<DIV id="mainSection">
+			<DIV id="mainBody">
+				<% Response.WriteBody(); %>
+			</DIV>
+			<% if (Project.Variables.GetValue("Create Copyright Link") == "True") { %>
+			<DIV id="footer">
+				<% var sCopyrightUrl = Project.Variables.GetValue("Copyright URL"); %>
+				<% if (sCopyrightUrl != "") { %>
+				<P><A href="<%= sCopyrightUrl %>" target="_blank"><%= Project.Collection.Copyright %></A></P>
+				<% } else { %>
+				<P><%= Project.Collection.Copyright %></P>
+				<% } %>
+			</DIV>
+			<% } %>
+		</DIV>
+		<% } %>
+	</BODY>
+</HTML>

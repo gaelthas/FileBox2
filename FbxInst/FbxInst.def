@@ -1,0 +1,3 @@
+LIBRARY FbxInst.dll
+
+STACKSIZE 524288

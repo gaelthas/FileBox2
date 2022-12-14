@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD"HTML//EN>
+<HTML>
+<HEAD>
+	<META name="Generator" content="MGTEK Help Producer - www.helpproducer.com">
+	<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+	<OBJECT Type="text/site properties">
+		<PARAM name="Font" value="Microsoft Sans Serif,10,0">
+	</OBJECT>
+	<UL>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="Welcome to FileBox eXtender">
+				<PARAM name="Local" value="html/welcome.html">
+			</OBJECT>
+		</LI>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="FileBox eXtender Features">
+				<PARAM name="Local" value="html/features.html">
+			</OBJECT>
+		</LI>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="How to Configure FbX">
+				<PARAM name="Local" value="html/configuration.html">
+			</OBJECT>
+			<UL>
+				<LI><OBJECT Type="text/sitemap">
+						<PARAM name="Name" value="The Favorites Tab">
+						<PARAM name="Local" value="html/favorites_tab.html">
+					</OBJECT>
+					<UL>
+						<LI><OBJECT Type="text/sitemap">
+								<PARAM name="Name" value="Item Properties Window">
+								<PARAM name="Local" value="html/item_props.html">
+							</OBJECT>
+						</LI>
+					</UL>
+				</LI>
+				<LI><OBJECT Type="text/sitemap">
+						<PARAM name="Name" value="The Settings Tab">
+						<PARAM name="Local" value="html/settings_tab.html">
+					</OBJECT>
+				</LI>
+				<LI><OBJECT Type="text/sitemap">
+						<PARAM name="Name" value="The File Boxes Tab">
+						<PARAM name="Local" value="html/fileboxes_tab.html">
+					</OBJECT>
+				</LI>
+				<LI><OBJECT Type="text/sitemap">
+						<PARAM name="Name" value="The Keys &amp; Menus Tab">
+						<PARAM name="Local" value="html/keys_menu_tab.html">
+					</OBJECT>
+				</LI>
+				<LI><OBJECT Type="text/sitemap">
+						<PARAM name="Name" value="The Exceptions Tab">
+						<PARAM name="Local" value="html/exceptions_tab.html">
+					</OBJECT>
+				</LI>
+				<LI><OBJECT Type="text/sitemap">
+						<PARAM name="Name" value="How to Change FbX Button Images">
+						<PARAM name="Local" value="html/change_buttons.html">
+					</OBJECT>
+				</LI>
+			</UL>
+		</LI>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="Registration and Licensing">
+				<PARAM name="Local" value="html/registration.html">
+			</OBJECT>
+		</LI>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="FbX Support Forum">
+				<PARAM name="Local" value="http://www.hyperionics.com/forum/forum.asp?FORUM_ID=4">
+				<PARAM name="URL" value="http://www.hyperionics.com/forum/forum.asp?FORUM_ID=4">
+			</OBJECT>
+		</LI>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="Contact and Support">
+				<PARAM name="Local" value="html/contact.html">
+			</OBJECT>
+		</LI>
+		<LI><OBJECT Type="text/sitemap">
+				<PARAM name="Name" value="Other Hyperionics Products">
+				<PARAM name="Local" value="html/other_products.html">
+			</OBJECT>
+		</LI>
+	</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,331 @@
+/*
+// theme.css - MSDN 2005
+// Copyright (C) 2003-2006 MGTEK. All rights reserved.
+*/
+
+/* --------------------------------------------------
+                  MAIN TOPIC STYLES
+-------------------------------------------------- */
+
+BODY
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: #000000;
+	background: #FFFFFF;
+	overflow: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+DIV#header
+{
+	width: 100%;
+	background-color: #D4DFFF;
+}
+
+DIV#headerRow
+{
+}
+
+DIV#headerRow P
+{
+	margin: 0px;
+	padding: 3px 20px 2px 16px;
+	color: #003399;
+	font-size: 62%;
+}
+
+DIV#titleRow
+{
+	border-bottom: solid 1px #C8CDDE;
+}
+
+DIV#titleRow P
+{
+	margin: 0px;
+	padding: 2px 20px 3px 16px;
+	color: #003399;
+	font-size: 80%;
+	font-weight: 600;
+}
+
+DIV#mainSection
+{
+	width: 100%;
+	font-size: 70%;
+}
+
+DIV#mainBody
+{
+	padding: 4px 5px 20px 15px;
+	font-size: 100%;
+}
+
+DIV#footer
+{
+	padding: 4px 5px 20px 15px;
+	font-size: 100%;
+}
+
+/* --------------------------------------------------
+                    HEADING STYLES
+-------------------------------------------------- */
+
+H1, H2, H3, H4
+{
+	margin-top: 1em;
+	margin-bottom: .4em;
+	color: #003399;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+H1
+{
+	font-size: 160%;
+	font-weight: normal;
+	margin-top: 0em;
+	margin-bottom: 0.8em;
+	border-bottom: solid 2px #8080C0;
+}
+
+H2
+{
+	font-size: 130%;
+}
+
+H3
+{
+	font-size: 115%;
+}
+
+H4
+{
+	font-size: 100%;
+}
+
+/* --------------------------------------------------
+                     TEXT STYLES
+-------------------------------------------------- */
+
+P
+{
+	margin: .5em 0em .5em 0em;
+}
+
+BLOCKQUOTE
+{
+	margin: .5em 1.5em .5em 1.5em;
+}
+
+.normal
+{
+	margin: .5em 0em .5em 0em;
+}
+
+.fineprint
+{
+	font-size: 90%;
+}
+
+.indent
+{
+	margin: .5em 1.5em .5em 1.5em;
+}
+
+/* --------------------------------------------------
+                     LABEL STYLES
+-------------------------------------------------- */
+
+P.label
+{
+	margin-top: 1em;
+}
+
+P.labelproc
+{
+	margin-top: 1em;
+	color: #000066;
+}
+
+/* --------------------------------------------------
+                    GRAPHIC STYLES
+-------------------------------------------------- */
+
+IMG
+{
+	border: none;
+}
+
+/* --------------------------------------------------
+                     LIST STYLES
+-------------------------------------------------- */
+
+OL, UL
+{
+	margin: .5em 0em 0em 2em;
+}
+
+LI
+{
+	margin-bottom: .5em;
+}
+
+UL P, OL P, DL P
+{
+	margin-left: 0em;
+}
+
+UL P.label, OL P.label
+{
+	margin-top: .5em;
+}
+
+/* --------------------------------------------------
+               DEFINITION LIST STYLES
+-------------------------------------------------- */
+
+DL
+{
+	margin-top: 0em;
+	padding-left: 1px;
+}
+
+DD
+{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+}
+
+DT
+{
+	margin-top: .5em;
+}
+
+/* --------------------------------------------------
+           CODE and SYNTAX STYLES
+-------------------------------------------------- */
+
+PRE
+{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+PRE, CODE, .code
+{
+	font: 100% Monospace, Courier New, Courier;
+	color: #000066;
+}
+
+PRE B, CODE B
+{
+	letter-spacing: .1em;
+}
+
+PRE.syntax
+{
+	background: #cccccc;
+	padding: 4px 8px;
+	cursor: text;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+/* --------------------------------------------------
+                      LINK STYLES
+-------------------------------------------------- */
+
+A:link
+{
+	color: #0000FF;
+}
+
+A:visited
+{
+	color: #0000FF;
+}
+
+A:hover
+{
+	color: #3366FF;
+}
+
+/* --------------------------------------------------
+                    TABLE STYLES
+-------------------------------------------------- */
+
+TABLE
+{
+	font-size: 100%;
+}
+
+TABLE.default
+{
+	border: 0px;
+	margin: 5px 0px;
+	font-size: 100%;
+}
+
+TABLE.default TH, TABLE.default TD
+{
+	vertical-align: top;
+}
+
+TABLE.default TH
+{
+	padding: 2px 5px;
+	color: #000066;
+	background-color: #EFEFF7;
+	text-align: left;
+	border-bottom: 1px solid #C8CDDE;
+}
+
+TABLE.default TD
+{
+	margin: 1px;
+	padding: 2px 5px;
+	background-color: #F7F7FF;
+	border-bottom: 1px solid #D5D5D3;
+}
+
+/* --------------------------------------------------
+                  ISSUE REPORTING
+-------------------------------------------------- */
+
+DIV.footer
+{
+	font-style: italic;
+}
+
+DIV.footer HR
+{
+	color: #999999;
+	height: 1px;
+}
+
+/* --------------------------------------------------
+                    POPUP STYLES
+-------------------------------------------------- */
+
+DIV#popup
+{
+	padding: 5px 8px;
+	color: #000000;
+	background: #FFFFCC;
+	border: solid 1px #999999;
+	font-size: 70%;
+}
+
+A#popup
+{
+	cursor: hand;
+	color: green;
+	text-decoration: underline;
+}
